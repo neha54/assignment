@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+   <h2>Cars </h2>
+   <script>
+class Company{
+
+constructor(name,year,country)
+{
+    this.name=name;
+    this.year=year;
+    this.country=country;
+}
+}
+class car extends Company
+{
+    constructor(carname,carcolor,carprice,year,country)
+    {
+        super(name,year,country);
+        this.year=year;
+        this.carname=carname;
+        this.carcolor=carcolor;
+        
+    }
+    getCar()
+    {
+        return this.carname;
+
+    }
+   
+
+}
+let car1=new car('audir8','black',5000000,2005);
+console.log(car1.getCar());
+let car2=new car('Swift','red',518000,2004);
+console.log(car2.getCar());
+
+
+
+    </script>
+</body>
+</html>
